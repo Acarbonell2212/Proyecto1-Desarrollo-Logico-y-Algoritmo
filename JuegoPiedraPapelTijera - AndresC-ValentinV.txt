@@ -1,0 +1,77 @@
+Algoritmo PiedraPapelTijera
+   {	
+	Definir p1, p2, p3, op1, op2, op3, ronda Como Entero;
+	Definir puntaje1, puntaje2, puntaje3 Como Entero;
+	Definir opcionesdejuego Como Cadena;
+	
+	puntaje1= 0;
+	puntaje2= 0;
+	puntaje3= 0;
+
+	{
+	Para (ronda=1; ronda<=3; ronda=ronda+1)
+		
+		Escribir "Turno de jugador 1:"
+	Imprimir "Elija una opción (1: Piedra, 2: Papel, 3: Tijera):";
+		Leer (opc1);
+		
+		Escribir "Turno de jugador 2:"
+	Imprimir "Elija una opción (1: Piedra, 2: Papel, 3: Tijera):";
+		Leer (opc2);
+	
+		Escribir "Turno de jugador 3"
+	Imprimir "Elija una opción (1: Piedra, 2: Papel, 3: Tijera):";
+		Leer (opc3);
+		
+		Si (op1 == op2 && op2 == op3 Entonces
+			Imprimir "Empate en la ronda ", ronda;
+		Sino
+		Si (op1==1 && op2==3) o (op1==2 && op2==1) O (op1==3 && op2==2) Entonces
+			Imprimir "Jugador 1 gana la ronda ", ronda;
+				puntaje1= puntaje1 + 1
+			Sino
+		Si (op2== 1 && op3== 3) O (op2== 2 && op3 == 1) O (op2== 3 && op3==2)Entonces
+			Imprimir "Jugador2 gana la ronda ", ronda;
+					puntaje2= puntaje2 + 1
+				Sino
+		Si (op1 == 1 && op3 == 3) O (op1== 2 && op3== 1) O (op1== 3 && op3== 2) o (op1== 2 && op3== 2)  Entonces
+		     Imprimir "jugador 3 gana la ronda ", ronda
+
+					puntaje3 = puntaje3 + 1
+
+
+
+		Sino
+		Si(op1>3 o op2>3 o op3>3) entonces 
+	      
+           Escribir "ronda no valida"
+							
+						FinSi
+					Fin Si
+				Fin Si
+			Fin Si
+		Fin Si
+		
+		
+	 }Fin Para
+	
+	Imprimir "Resultados"
+	Imprimir "Pts del player1:", puntaje1;
+       Imprimir "Pts del player2:", puntaje2;
+	Imprimir "Pts del player3:", puntaje3;
+	
+	Si puntaje1 == puntaje2 && puntaje2 == puntaje3 Entonces
+		Imprimir "Empate entre todos los players";
+	Sino
+		Si (puntaje1 > puntaje2 && puntaje1 > puntaje3) Entonces
+		Imprimir "El ganador es el player1";
+		Sino
+		Si (puntaje2 > puntaje1 && puntaje2 > puntaje3)  Entonces
+		Imprimir "El ganador es el player2";
+			Sino
+		Imprimir "El ganador es el player3";
+			Fin Si
+		Fin Si
+	Fin Si
+	
+    }FinAlgoritmo

@@ -1,0 +1,15 @@
+
+el problema de la isla de manhattan, la misma fue vendida por los indios a los colonos en 1627 por equivalente a $24 dolares en piezas de fantasia y dijes, este programa debe calcular el valor que tendria la inversion en el año de 1976, si el dinero se hubiese invertido al 6% de interes compuesto anualmente
+
+Algoritmo CalcularValorInversion
+    //definir variables 
+   Real ci, ts  , mt ;
+	entero a ;
+	ts = 0.06; // Tasa de interés anual del 6%
+	a=349;// cantidad de años que transcurrio
+    Escribir "Ingrese el monto de la inversión inicial (en dólares): ";
+    Leer (ci);
+            mt=(ci*ts*a+ci );
+    
+    Escribir "El valor de la inversión en el año 1976 sería de $", mt ;
+FinAlgoritmo

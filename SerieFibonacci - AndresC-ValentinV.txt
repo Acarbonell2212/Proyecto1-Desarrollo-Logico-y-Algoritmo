@@ -1,0 +1,35 @@
+Algoritmo FibonacciPersonalizado
+
+//definir variables 
+{
+ Entero contador, cnu, nu1, nu2, snu, x;
+      
+		
+    Escribir "ingrese el numero con el que desea iniciar:";
+    leer x;
+    Escribir "Ingrese la cantidad de números de la serie de Fibonacci a mostrar: ";
+    Leer cnu;
+	
+    Si cnu<= 0 Entonces
+   { 
+    Escribir "La cantidad de números debe ser mayor que cero.";
+    Sino
+		
+        nu1 = 0;
+        nu2 = x;
+		
+		
+        Escribir "Los números de la serie de Fibonacci son: ";
+		
+        contador = -1;
+		
+        Mientras contador <= cnu Hacer
+            Escribir nu1;
+            snu = nu1 + nu2;
+            nu1 = nu2;
+            nu2 = snu;
+            contador = contador + 1;
+        } Fin Mientras
+    } Fin Si
+	
+} //FinAlgoritmo
