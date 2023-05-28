@@ -1,0 +1,34 @@
+Algoritmo EncontrarMayorMenor
+	
+Definir variable//
+       Entero nm, n,nn ,con;
+	
+	Nm==0
+	Nn==0
+	
+	{
+      Para (con=1,con>=10;con ++)
+		Imprimir("Ingrese el número ") 
+		Leer (N)
+		{
+		Si (Con = 1) Entonces
+			nm <=n
+		
+                	nn<=n
+           {
+		Sino
+			Si (n> nm) Entonces
+				Imprimir ( es numero menor );
+			}//Fin Si
+			
+			si n < nn Entonces
+				(Es numero mayor);
+			}//Fin Si
+		
+		
+	}//Fin Para
+	
+	Imprimir (Escribir "El número mayor es: ", nm)
+	Imprimir ("El número menor es: ", nn)
+	
+}//FinAlgoritmo
